@@ -44,7 +44,7 @@
                 <div class="flex">
                     <div class="flex-shrink-0 flex items-center">
                         <a class="italic flex gap-2 group" href="{{ url('/') }}">
-                            <img class="w-7" src="{{ asset('images/logo.jpg') }}" width="70%" height="70%"
+                            <img src="{{ asset('images/logo.jpg') }}" width="100vw" height="100vh"
                                 alt="{{ config('zeus.site_title', config('app.name', 'Laravel')) }}">
                         </a>
                     </div>
