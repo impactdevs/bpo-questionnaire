@@ -33,7 +33,7 @@
             <div class="flex">
                 <div class="flex-shrink-0 flex items-center">
                     <a class="italic flex gap-2 group" href="{{ url('/') }}">
-                        <img class="w-7" src="https://larazeus.com/images/zeus-logo.png" alt="{{ config('zeus.site_title', config('app.name', 'Laravel')) }}">
+                        <img class="w-7" src="{{ asset('images/logo.jpg') }}" alt="{{ config('zeus.site_title', config('app.name', 'Laravel')) }}">
                         @zeus
                     </a>
                 </div>
@@ -77,8 +77,9 @@
 </div>
 
 <footer class="bg-gray-100 dark:bg-gray-800 p-6 text-center font-light">
-    <a href="https://larazeus.com" target="_blank">
-        a gift with ❤️ &nbsp;from @zeus
+    <a href="https://impactoutsourcing.co.ug/" target="_blank">
+        {{-- copyright 2024 from impact outsourcing --}}
+        &copy; {{ date('Y') }} {{ config('zeus.site_title', config('app.name', 'Laravel')) }}
     </a>
 </footer>
 
