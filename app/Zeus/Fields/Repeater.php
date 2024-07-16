@@ -4,6 +4,7 @@ namespace App\Zeus\Fields;
 
 use Filament\Forms\Components\Toggle;
 use LaraZeus\Bolt\Fields\FieldsContract;
+use Filament\Forms\Components\TextInput;
 
 class Repeater extends FieldsContract
 {
@@ -34,5 +35,16 @@ class Repeater extends FieldsContract
             self::hiddenColumnSpanFull(),
         ];
     }
+    public function appendFilamentComponentsOptions($component, $zeusField, bool $hasVisibility = false)
+{
+    parent::appendFilamentComponentsOptions($component, $zeusField, $hasVisibility);
+
+    $component = $component->schema([
+        TextInput::make('name')->required(),
+
+    ]);
+
+    return $component;
+}
 }
 
