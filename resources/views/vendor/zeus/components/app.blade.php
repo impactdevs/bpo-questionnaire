@@ -41,18 +41,18 @@
     <header x-data="{ open: false }" class="bg-white dark:bg-black px-4">
         <div class="container mx-auto">
             <div class="flex justify-between h-16">
-                <div class="flex">
+                <div class="flex justify-center"> <!-- Centering the logo -->
                     <div class="flex-shrink-0 flex items-center">
                         <a class="italic flex gap-2 group" href="{{ url('/') }}">
                             <img src="{{ asset('images/logo.jpg') }}" width="100vw" height="100vh"
                                 alt="{{ config('zeus.site_title', config('app.name', 'Laravel')) }}">
                         </a>
                     </div>
-
                 </div>
             </div>
         </div>
     </header>
+
 
     <header class="bg-gray-100 dark:bg-gray-800">
         <div class="container mx-auto py-2 px-3">
