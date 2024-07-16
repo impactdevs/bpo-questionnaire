@@ -24,7 +24,7 @@
             </x-slot>
         @endif
 
-        <x-slot name="breadcrumbs">
+        {{-- <x-slot name="breadcrumbs">
             @if($zeusForm->extensions === null)
                 <li class="flex items-center">
                     <a href="{{ route('bolt.forms.list') }}">{{ __('Forms') }}</a>
@@ -39,7 +39,7 @@
             <li class="flex items-center">
                 {{ $zeusForm->name }}
             </li>
-        </x-slot>
+        </x-slot> --}}
     @endif
 
     @if(!$inline)
