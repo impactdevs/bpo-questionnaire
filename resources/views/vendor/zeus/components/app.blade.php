@@ -44,18 +44,11 @@
                 <div class="flex">
                     <div class="flex-shrink-0 flex items-center">
                         <a class="italic flex gap-2 group" href="{{ url('/') }}">
-                            <img class="w-7" src="{{ asset('images/logo.jpg') }}"
+                            <img class="w-7" src="{{ asset('images/logo.jpg') }}" width="70%" height="70%"
                                 alt="{{ config('zeus.site_title', config('app.name', 'Laravel')) }}">
                         </a>
                     </div>
 
-                    <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex sm:items-center">
-                        {{-- Navigation Links --}}
-                    </div>
-
-                </div>
-                <div class="hidden sm:flex sm:items-center sm:ml-6">
-                    {{-- Account menu and other icons --}}
                 </div>
             </div>
         </div>
