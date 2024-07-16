@@ -7,13 +7,14 @@ use LaraZeus\Bolt\Fields\FieldsContract;
 
 class Repeater extends FieldsContract
 {
-    public string $renderClass = Filament\Forms\Components\Repeater::class;
+    // public string $renderClass = Filament\Forms\Components\Repeater::class;
+    public string $renderClass = \Filament\Forms\Components\Repeater::class;
 
     public int $sort = 20;
 
     public function title(): string
     {
-        return __('Checkbox List');
+        return __('Repeater List');
     }
 
     public static function getOptions(): array
