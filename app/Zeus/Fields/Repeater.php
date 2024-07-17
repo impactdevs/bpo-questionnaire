@@ -40,7 +40,9 @@ class Repeater extends FieldsContract
     parent::appendFilamentComponentsOptions($component, $zeusField, $hasVisibility);
 
     $component = $component->schema([
-        TextInput::make('name')->required(),
+        TextInput::make('name')
+            ->label(__('Add Field Name'))
+            ,
 
     ]);
 
