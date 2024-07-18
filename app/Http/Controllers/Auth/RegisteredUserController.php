@@ -48,6 +48,6 @@ class RegisteredUserController extends Controller
         // return redirect(route('dashboard', absolute: false));
         //return redirect()->intended(route("bolt.form.show", absolute: false));
        // return redirect()->intended();
-       return redirect()->route('bolt.form.show',['slug' => 'test-form']);
+       return redirect()->route('bolt.form.show',['slug' => 'bpo-data-collection']);
     }
 }
