@@ -8,6 +8,9 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="application-name" content="{{ config('app.name', 'Laravel') }}">
 
+    {{-- favicon here --}}
+    <link rel="icon" href="{{ asset('images/fav.ico') }}" type="image/x-icon" />
+
     <!-- Seo Tags -->
     <x-seo::meta />
     <!-- Seo Tags -->
@@ -37,18 +40,18 @@
 
 <body
     class="font-sans antialiased bg-gray-50 text-gray-900 dark:text-gray-100 dark:bg-gray-900 @if (app()->isLocal()) debug-screens @endif">
-
     <header x-data="{ open: false }" class="bg-white dark:bg-black px-4">
-        <div class="container mx-auto">
-            <div class="flex justify-between h-16">
-                <div class="flex justify-center"> <!-- Centering the logo -->
-                    <div class="flex-shrink-0 flex items-center">
-                        <a class="italic flex gap-2 group" href="{{ url('/') }}">
-                            <img src="{{ asset('images/logo.jpg') }}" width="100vw" height="100vh"
-                                alt="{{ config('zeus.site_title', config('app.name', 'Laravel')) }}">
-                        </a>
-                    </div>
-                </div>
+        <div class="container mx-auto" style="background-color: #035eb8">
+            <div class="flex justify-center items-center flex-col h-130"> <!-- Centering the logo and text in a column -->
+                <a class="italic flex gap-2 group" href="#">
+                    <img src="{{ asset('images/logo_bigger_white-1.png') }}" class="w-72 h-62 rounded-lg" alt="{{ config('zeus.site_title', config('app.name', 'Laravel')) }}">
+                </a>
+
+                <p class="text-center mt-5 mb-5 text-gray-100">
+                    Welcome to the BPO Data survey form. You are required to answer all the questions in the form as accurately as possible to help us understand you better and make better conclusions and aggregations from our research. We do not intend to sell your data to any third party. We are only interested in understanding the data to help us make better decisions. Rest assured that the data you provide is secure and will not be shared with any third party. Also, this is a government-approved survey form. Thank you for your time and cooperation.
+                    <br>
+                    <strong>NOTE: Spare 25-30 minutes to complete the survey form.</strong>
+                </p>
             </div>
         </div>
     </header>
